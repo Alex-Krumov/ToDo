@@ -241,6 +241,21 @@ aside .folder div span {
 	display: inline-block;
 }
 
+.header input {
+	border-style: none;
+	border: solid thin rgb(21,130,219);
+	background: white;
+}
+
+form .text-error {
+	background: rgb(21,130,219);
+	color:white;
+	text-shadow: 0 0 1px black;
+	width: 200px;
+	position: absolute;
+	float:top right;
+}
+
 @font-face
 {
 	font-family: Nevis;
