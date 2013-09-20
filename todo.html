@@ -13,17 +13,22 @@
 
 	<header>
 		<nav>
-			<ul>
-				<li class="logo">ToDo!
+			<ul class="nav">
+				<li class="logo"><a href="todo.html">ToDo!</a>
 					<ul class="dropdown-menu">
 						<li>New task</li><br>
-						<li>Settings</li><br>
-						<li>Status</li>
 					</ul>
 				</li>
-				<li>Today <span class="today-count">3</span></li>
-				<li>This Week <span>5</span></li>
-				<li>This Month <span>21</span></li>
+				<li><a href="">Today <span class="today-count">0</span></a></li>
+				<li><a href="">This Week <span>5</span></a></li>
+				<li><a href="">This Month <span>21</span></a></li>
+				<li class="user-name"><a href=""><div id="user_name">Alex-Krumov</div><img class="dropdown" src="img/icons/white/sq_br_down_icon&16.png"></a>
+					<ul class="user-dropdown">
+						<li><a href="#">Profile</a></li>
+						<li><a href="#">Settings</a></li>
+						<li><a href="#">Logout</a></li>
+					</ul>
+				</li>
 			</ul>
 		</nav>
 	</header>
@@ -31,7 +36,7 @@
 	<section>
 		<aside>
 			<div>
-				<div class="header">Today <div> <span class="today-count">3</span> <img class="add-folder"src="img/icons/black/folder_plus_icon&16.png"></div></div>
+				<div class="header">Today <div> <span class="today-count">0</span> <img class="add-folder"src="img/icons/black/folder_plus_icon&16.png" title="Add folder"></div></div>
 				<ul class="tasks">
 					<li class="folder">
 
@@ -60,11 +65,11 @@
 						</uL>
 					</li>
 				</ul>
-				<div class="header">Completed <span class="completed-count">3</span></div>
+				<div class="header">Completed <span class="completed-count">0</span></div>
 				<ul class="Completed">
 
 					<li class="folder">
-						<div class="section closed"><div class="folder-name" name="Work">Work</div><span>2</span></div>
+						<div class="section closed"><div class="folder-name" name="Work">Work</div><span>0</span></div>
 
 						<ul class="work-completed">
 							<li class="file hide">
@@ -81,7 +86,7 @@
 
 					<li class="folder">
 
-						<div class="section closed"> <div class="folder-name" name="Shopping">Shopping</div> <span>2</span></div>
+						<div class="section closed"> <div class="folder-name" name="Shopping">Shopping</div> <span>0</span></div>
 
 						<ul class="shopping-completed">
 							<li class="file hide">
@@ -94,6 +99,42 @@
 
 			</div>
 		</aside>
+
+
+		<article class="hellolMsg">
+			<div>
+				<p>Hello, user!<br><br> For today you have <span class="today-count">0</span> tasks to finish. They will take around 2
+				hours.</p>
+			</div>
+		</article>
+
+		<article class="fileDetails">
+			<div>
+				<table>
+					<tr>
+						<th>Title:</th>
+						<td>Remove Domains</td>
+					</tr>
+					<tr>
+						<th>Estimate time:</th>
+						<td><span>40</span> min</td>
+					</tr>
+					<tr>
+						<th>Priority:</th>
+						<td>High</td>
+					</tr>
+					<tr>
+						<th>Difficulty</th>
+						<td>Medium</td>
+					</tr>
+					<tr>
+						<th>Date to finish</th>
+						<td>08/11/2013</td>
+					</tr>
+
+				</table>
+			</div>
+		</article>
 	</section>
 
 <script src="js/jquery.js"></script>
